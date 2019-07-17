@@ -1,0 +1,130 @@
+
+
+
+/* These rules apply when width of device or browser is <= 1200px (iPads in lanscape mode to computers). Width is smaller than pixel row so there's some margin on either side of our 1140px row. */
+@media only screen and (max-width: 1200px) {
+    /* Basically, view the page at each breakpoint, and fix the things that look broken. */
+    .hero-text-box {
+        width: 100%; /* width is no longer fixed, it's just the width of user-decided window*/
+        padding: 0 2%; /* This prevents hero text from going off-page; if user shrinks page any further, this forces a 2% padding left and right.*/
+
+    }
+    
+    .row { padding: 0 2%; } /* Prevent everything within the .row class, which is very broad, from going off page when shrunken too much*/
+}
+
+/* These rules apply when width of device or browser is <= 1023px (iPads in portrait mode) */
+@media only screen and (max-width: 1023px) {
+    
+    body { font-size: 18px; } /* FONT-SIZES DEFINED IN %, so all font sizes are based on base font-size. Now all font-sizes will automatically decrease. */
+    
+    section { padding: 60px 0; } /* reduce the amount of space between each section since screen is smaller now.*/
+    
+    .long-copy {
+        width: 80%; /* increase the width of text shown; on a tablet screen, wider is easier to read */
+        margin-left: 10%; /* balance out left and right margins, so it's centered*/
+        margin-right: 10%;
+    }
+    
+    .steps-box { margin-top: 10px; } /* reduce the margins separating text from header*/
+    .steps-box:last-child { margin-top: 10px };
+    .works-steps { margin-bottom: 40px; }
+    .works-steps:last-of-type {margin-bottom: 60px; }
+    
+    .app-screen { width: 50%; } /* increase the size of the phone picture, relative to screen */
+    
+    .icon-small { width: 17px; margin-right: 5px; } /* make things smaller in the "cities" section */
+    .city-feature { font-size: 90%;  }
+    
+    .plan-box { /* let the subscription boxes take up more of the screen size*/
+        width: 100%;
+        margin-left: 0%;   
+    }
+    
+    .plan-price { font-size: 250%; } /* used to be 300% now it's reduced. */
+    
+    .contact-form { 80%; } /* make contact form a bit wider*/
+    
+    
+}
+
+/* These rules apply when width of device or browser is <= 767px (bigger phones, but smaller than an iPad) */
+@media only screen and (max-width: 767px) {
+    
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    .row { padding: 0 4%; }
+    .col { width: 100%; margin: 0 0 4% 0;} /* All the columns stack instead of being side by side, since the screen sice is quite small by now. Also, eliminate left, right and top margins since they're stacked now anyway.*/
+    
+    .main-nav {display: none; } /* when screen is small enough, just hide the top-right navigation... takes up horizontal estate */
+    
+    .mobile-nav-icon {
+        display: inline-block;
+    }   
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 40px;
+    }
+    
+    .main-nav li {
+        display: block; /* so they now stack vertically instead of side by side */
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border-bottom: 0; /* on mobile theres no hover*/
+        font-size: 90%;
+        padding: 10px 0;
+    }
+    
+    
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+    /* define how the sticky text, logo etc. will look like */
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0;/* so the underline appears lower, right at the bottom edge of the sticky nav*/
+    }
+    
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;
+    }
+    
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: auto;
+    }
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; } /* reduce how big these fonts are, since it's a smaller screen */
+    
+    .works-step { margin-bottom: 20px; } /* reduce separation amount between steps */
+    .works-steps:last-of-type {margin-bottom: 20px; } /* between last step and buttons */
+    
+    .works-steps div {
+        height: 40px;
+        width: auto;
+        margin-right: 15px;
+        padding: 4px; 
+        font-size: 120%;
+    }
+    
+    .steps-box:first-child { text-align: center; }
+    .app-screen { width: 150px; }
+}
+
+/* These rules apply when width of device or browser is <= 480px (a smol phone) */
+@media only screen and (max-width: 480px) {
+    
+    section { padding: 25px 0; } /* reduce separation between each section */
+    .contact-form { width: 100%; } /* fuller contact form */
+    
+} 
