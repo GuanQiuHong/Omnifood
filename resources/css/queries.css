@@ -118,7 +118,7 @@
     }
 
     .section-testimonials {
-        height: 200vh;
+        height: 300%;
     }
     
     .steps-box:first-child { text-align: center; }
@@ -127,7 +127,10 @@
 
 /* These rules apply when width of device or browser is <= 480px (a smol phone) */
 @media only screen and (max-width: 480px) {
-    
+
+    .section-testimonials {
+        height: 300%;
+    }
     section { padding: 25px 0; } /* reduce separation between each section */
     .contact-form { width: 100%; } /* fuller contact form */
     
