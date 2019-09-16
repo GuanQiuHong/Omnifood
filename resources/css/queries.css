@@ -118,7 +118,7 @@
     }
 
     .section-testimonials {
-        height: 300%;
+        height: 320%;
     }
     
     .steps-box:first-child { text-align: center; }
@@ -129,7 +129,7 @@
 @media only screen and (max-width: 480px) {
 
     .section-testimonials {
-        height: 300%;
+        height: 320%;
     }
     section { padding: 25px 0; } /* reduce separation between each section */
     .contact-form { width: 100%; } /* fuller contact form */
