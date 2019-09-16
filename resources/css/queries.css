@@ -116,6 +116,10 @@
         padding: 4px; 
         font-size: 120%;
     }
+
+    .section-testimonials {
+        height: 200vh;
+    }
     
     .steps-box:first-child { text-align: center; }
     .app-screen { width: 150px; }

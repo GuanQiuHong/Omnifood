@@ -338,6 +338,7 @@ When we're not inside the sticky class, the white logo will appear (on the main 
     display: block;
 }
 .sticky .logo { display: none; }
+
 /* --------------------------------------------------------- */
 /* FEATURES */
 /* --------------------------------------------------------- */
